@@ -8,7 +8,6 @@
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/postgres</property>
         <property name="hibernate.connection.username">postgres</property>
-<!--        <property name="hibernate.connection.password">jY6SCTw2KbKEv5ds</property>-->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
