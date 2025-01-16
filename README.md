@@ -1,7 +1,7 @@
 <b>Лаб 3</b>
 
 
-<img width="70%" alt="Снимок экрана 2025-01-16 в 22 06 50" src="https://github.com/user-attachments/assets/553a4492-f2f0-46fc-a614-a04a12d2a7b7"/>
+<img width="50%" alt="Снимок экрана 2025-01-16 в 22 06 50" src="https://github.com/user-attachments/assets/553a4492-f2f0-46fc-a614-a04a12d2a7b7"/>
 
 Разработать приложение на базе JavaServer Faces Framework, которое осуществляет проверку попадания точки в заданную область на координатной плоскости.
 
