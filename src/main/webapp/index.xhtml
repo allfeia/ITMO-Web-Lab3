@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: alyssanabokova
+  Date: 21.12.2024
+  Time: 01:20
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Title</title>
+    <link rel="stylesheet" href="style/style.css"/>
+</h:head>
+
+<h:body>
+    <div class="header">
+        Nabokova Alisa Vladislavovna  group: P3220 var: 9811
+    </div>
+    <h1>Welcome to my lair</h1>
+
+    <h:form>
+        <h:commandButton id="openButton" value="enter the swamp" action="goToMain" styleClass="swamp-button"/>
+    </h:form>
+
+    <img src="shrek/product-9874cbfb-a16f-409d-a73c-ed0c4a96ee9d.png" class="shrek-image"  alt="shrek"/>
+
+    <div id="clock" style="font-size: 35px; margin-top: 50px;"></div>
+
+    <script type="text/javascript">
+        function updateClock() {
+            const clockDiv = document.getElementById('clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
+            console.log(hours, minutes, seconds)
+        }
+
+        updateClock();
+        setInterval(updateClock, 6000);
+    </script>
+
+
+</h:body>
+
+</html>

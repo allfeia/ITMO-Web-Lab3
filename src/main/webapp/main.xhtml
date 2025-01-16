@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+    <title>Главная</title>
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="" href="style/main.css"/>
+
+</h:head>
+<h:body>
+    <div class="header">
+        Nabokova Alisa Vladislavovna  group: P3220 var: 9811
+    </div>
+    <h:form>
+        <h:commandButton id="openButton" value="get out" action="goToIndex" styleClass="swamp-button"/>
+        <section class="block plot-section">
+            <div class="left-block" id="axis">
+                <svg height="300" width="300" xmlns="http://www.w3.org/2000/svg" id="axis-svg">
+                    <!-- ось x -->
+                    <line x1="0" x2="300" y1="150" y2="150" stroke="white"></line>
+                    <!-- ось y -->
+                    <line x1="150" x2="150" y1="0" y2="300" stroke="white"></line>
+
+                    <polygon fill="white" points="150,0 144,15 156,15" stroke="white"></polygon>
+                    <polygon fill="white" points="300,150 285,156 285,144" stroke="white"></polygon>
+
+                    <!-- +x: R/2 -->
+                    <line stroke="white" x1="166.8" x2="166.8" y1="155" y2="145"></line>
+
+                    <line stroke="white" x1="183.4" x2="183.4" y1="155" y2="145"></line>
+
+                    <line stroke="white" x1="200" x2="200" y1="155" y2="145"></line>
+                    <!-- 2 -->
+                    <line stroke="white" x1="216.6" x2="216.6" y1="155" y2="145"></line>
+                    <!-- 2.5 -->
+                    <line stroke="white" x1="232.6" x2="232.6" y1="155" y2="145"></line>
+                    <!-- R -->
+                    <line stroke="white" x1="250" x2="250" y1="155" y2="145"></line>
+
+                    <!-- -x: -R -->
+
+                    <line stroke="white" x1="50" x2="50" y1="155" y2="145"></line>
+
+                    <line stroke="white" x1="66.6" x2="66.6" y1="155" y2="145"></line>
+
+                    <line stroke="white" x1="83.2" x2="83.2" y1="155" y2="145"></line>
+
+                    <!-- -R/2 -->
+                    <line stroke="white" x1="100" x2="100" y1="155" y2="145"></line>
+
+                    <line stroke="white" x1="116.6" x2="116.6" y1="155" y2="145"></line>
+
+                    <line stroke="white" x1="132.6" x2="132.6" y1="155" y2="145"></line>
+
+                    <!-- +y: R/2 -->
+                    <line stroke="white" x1="145" x2="155" y1="132.6" y2="132.6"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="116.6" y2="116.6"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="100" y2="100"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="83.2" y2="83.2"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="66.6" y2="66.6"></line>
+
+                    <!-- R -->
+                    <line stroke="white" x1="145" x2="155" y1="50" y2="50"></line>
+
+                    <!-- -y: -R/2 -->
+                    <line stroke="white" x1="145" x2="155" y1="166.8" y2="166.8"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="183.4" y2="183.4"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="200" y2="200"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="216.6" y2="216.6"></line>
+
+                    <line stroke="white" x1="145" x2="155" y1="232.6" y2="232.6"></line>
+                    <!-- R -->
+                    <line stroke="white" x1="145" x2="155" y1="250" y2="250"></line>
+
+                    <!-- Подписи к засечкам -->
+<!--                    <text fill="white" font-size="10" x="195" y="140">1.5</text>-->
+<!--                    <text fill="white" font-size="10" x="248" y="140">3</text>-->
+
+<!--                    <text fill="white" font-size="10" x="40" y="140">-3</text>-->
+<!--                    <text fill="white" font-size="10" x="90" y="140">-1.5</text>-->
+
+<!--                    <text fill="white" font-size="10" x="160" y="105">1.5</text>-->
+<!--                    <text fill="white" font-size="10" x="160" y="55">3</text>-->
+
+<!--                    <text fill="white" font-size="10" x="160" y="205">-1.5</text>-->
+<!--                    <text fill="white" font-size="10" x="160" y="255">-3</text>-->
+
+                    <!-- Подписи на оси X -->
+<!--                    <text fill="white" font-size="10" x="210" y="140">1</text>-->
+<!--                    <text fill="white" font-size="10" x="235" y="140">2</text>-->
+<!--                    <text fill="white" font-size="10" x="260" y="140">2.5</text>-->
+
+<!--                    <text fill="white" font-size="10" x="110" y="140">-1</text>-->
+<!--                    <text fill="white" font-size="10" x="85" y="140">-2</text>-->
+<!--                    <text fill="white" font-size="10" x="60" y="140">-2.5</text>-->
+
+<!--                    &lt;!&ndash; Подписи на оси Y &ndash;&gt;-->
+<!--                    <text fill="white" font-size="10" x="160" y="120">1</text>-->
+<!--                    <text fill="white" font-size="10" x="160" y="90">2</text>-->
+<!--                    <text fill="white" font-size="10" x="160" y="65">2.5</text>-->
+
+<!--                    <text fill="white" font-size="10" x="160" y="175">-1</text>-->
+<!--                    <text fill="white" font-size="10" x="160" y="210">-2</text>-->
+<!--                    <text fill="white" font-size="10" x="160" y="235">-2.5</text>-->
+
+                    <text fill="white" x="160" y="10">Y</text>
+                    <text fill="white" x="290" y="140">X</text>
+
+                    <!-- прямоугольник слева вверху -->
+                    <rect class="figure" x="50" y="50" width="100" height="100" fill="white" fill-opacity="0.2" stroke="white" >
+                    </rect>
+                    <!-- треугольник справа вверху -->
+                    <polygon class="figure" fill="white" fill-opacity="0.2" points="150,150 200,150 150, 50" stroke="white">
+                    </polygon>
+                    <!-- полукруг слева снизу -->
+                    <path class="figure" d="M 200 150 A 50, 50, 0, 0, 1, 150 200 L 150 150 Z" fill-opacity="0.2" fill="white"
+                          stroke="white"></path>
+                </svg>
+                <div class='coordinates' id='coordinates'></div>
+            </div>
+        </section>
+        <div class="right-block">
+            <div class="form-group">
+                <h:outputLabel for="xInput" value="Enter the coordinate X"/>
+                <h:selectOneMenu id="xInput" value="#{pointBean.x}" styleClass="select-field">
+                    <f:selectItem itemValue="4" itemLabel="-4"/>
+                    <f:selectItem itemValue="3" itemLabel="-3"/>
+                    <f:selectItem itemValue="2" itemLabel="-2"/>
+                    <f:selectItem itemValue="1" itemLabel="-1"/>
+                    <f:selectItem itemValue="0" itemLabel="0"/>
+                    <f:selectItem itemValue="-1" itemLabel="1"/>
+                    <f:selectItem itemValue="-2" itemLabel="2"/>
+                    <f:selectItem itemValue="-3" itemLabel="3"/>
+                    <f:selectItem itemValue="-4" itemLabel="4"/>
+                </h:selectOneMenu>
+            </div>
+
+            <div class="form-group">
+                <h:outputLabel for="yInput" value="Enter the coordinate Y"/>
+                <h:inputText id="yInput" a:placeholder="-5...3" value="#{pointBean.y}" styleClass="input-field"/>
+            </div>
+
+            <div class="form-group">
+                <h:outputLabel for="rInput" value="Enter the radius"/>
+                <h:selectOneMenu id="rInput" value="#{pointBean.r}" styleClass="select-field" onchange="reDrawAxis(this.value)">
+                    <f:selectItem itemValue="3" itemLabel="3"/>
+                    <f:selectItem itemValue="2.5" itemLabel="2.5"/>
+                    <f:selectItem itemValue="2" itemLabel="2"/>
+                    <f:selectItem itemValue="1.5" itemLabel="1.5"/>
+                    <f:selectItem itemValue="1" itemLabel="1"/>
+                </h:selectOneMenu>
+            </div>
+
+            <div class="form-group">
+                <h:commandButton id="checkButton" value="submit" styleClass="button" onclick="return validation()" >
+                    <f:ajax execute="@form"
+                            listener="#{checkPointBean.check(pointBean)}"
+                            render="resultsTable"/>
+                </h:commandButton>
+
+                <h:button id="clear" value="clear points" styleClass="button" onclick="clearPoints(); return false"/>
+            </div>
+            <div><label id="status"></label></div>
+        </div>
+    </h:form>
+
+        <div id="table-container">
+            <h:dataTable id="resultsTable"
+                         value="#{checkPointBean.results}"
+                         var="result"
+                         rows="5"
+                         paginator="true"
+                         paginatorPosition="bottom"
+                         styleClass="table">
+                <h:column>
+                    <f:facet name="header">X</f:facet>
+                    <h:outputText value="#{result.x}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Y</f:facet>
+                    <h:outputText value="#{result.y}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">R</f:facet>
+                    <h:outputText value="#{result.r}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Result</f:facet>
+                    <h:outputText value="#{result.isHit}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Execution Time</f:facet>
+                    <h:outputText value="#{result.execution_time}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Server Time</f:facet>
+                    <h:outputText id="server_time" value="#{result.server_time}"/>
+                </h:column>
+
+            </h:dataTable>
+
+            <h:panelGrid columns="2">
+                <h:commandLink value="Previous" action="#{checkPointBean.previousPage}">
+                    <f:ajax execute="resultsTable" render="resultsTable"/>
+                </h:commandLink>
+                <h:commandLink value="Next" action="#{checkPointBean.nextPage}" disabled="#{checkPointBean.currentPage == checkPointBean.totalPages - 1}">
+                    <f:ajax execute="resultsTable" render="resultsTable"/>
+                </h:commandLink>
+
+            </h:panelGrid>
+        </div>
+
+
+
+    <h:inputHidden id="xH" value="#{pointBean.x}"/>
+
+    <script src="js/script.js"></script>
+
+</h:body>
+</html>

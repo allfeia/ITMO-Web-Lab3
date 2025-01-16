@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: fantasy;
+    margin: 0;
+    min-height: 100vh; /* Для корректной высоты страницы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: fantasy;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    margin-top: 120px; /* Смещение вниз из-за фиксированной шапки */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 30px; /* Расстояние между текстом и кнопкой */
+}
+
+.shrek-image {
+    position: absolute; /* Позиционирование для размещения у края */
+    right: 0; /* Вплотную к правому краю */
+    top: 50%; /* Выравнивание по вертикали */
+    transform: translateY(-50%); /* Центрирование по вертикали относительно контейнера */
+    max-width: 400px; /* Ограничение максимальной ширины */
+    height: auto;
+}
+
+.swamp-button {
+    background-color: greenyellow;
+    font-size: 40px; /* Увеличенный размер текста */
+    border: none;
+    padding: 25px 50px; /* Увеличенные отступы */
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.swamp-button:hover {
+    background-color: darkgreen;
+}
+
